@@ -27,7 +27,8 @@ body{
     background-color: var(--Very-Light-Gray);
     align-items: center;
     text-align: center;
-    margin: 90px 30px;
+    margin: 90px 8px 0 8px;
+    padding: 0 20px;
 }
 .intro{
     font-size: 16px;
@@ -36,6 +37,7 @@ body{
 .intro__title{
     font-weight: 100;
     color: var(--Very-Dark-Blue);
+    padding: 0 20px;
 }
 .intro__subtitle{
     font-weight: 800;
@@ -134,7 +136,6 @@ body{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        max-width: 1300px;
     }
     .supervisor{
         margin-top: 175px;
