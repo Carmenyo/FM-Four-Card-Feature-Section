@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,5 +7,107 @@
 }
 
 :root{
-    
+/* font */
+--fontPoppins: 'Poppins', sans-serif;
+/* ### Primary */
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+/* ### Neutral */
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
 }
+
+body{
+    width: 100;
+    background-color: var(--Very-Light-Gray);
+    align-items: center;
+    text-align: center;
+    margin: 90px 30px;
+}
+.intro{
+    font-size: 16px;
+    font-family: var(--fontPoppins);
+}
+.intro__title{
+    font-weight: 100;
+    color: var(--Very-Dark-Blue);
+}
+.intro__subtitle{
+    font-weight: 800;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 18px;
+}
+.intro__paragraph{
+    color: var(--Grayish-Blue);
+    margin-bottom: 70px;
+}
+.supervisor{
+    background-color: white;
+    border-top: 4px solid var(--Cyan);
+    border-radius: 5px;
+    margin: 30px 8px;
+    font-family: var(--fontPoppins);
+    color: var(--Very-Dark-Blue);
+    text-align: left;
+    padding: 16px 16px;
+    box-shadow: 3px 3px 5px 3px rgb(212, 210, 210);
+}
+
+.teamBuilder{
+    background-color: white;
+    border-top: 4px solid var(--Red);
+    border-radius: 5px;
+    margin: 30px 8px;
+    font-family: var(--fontPoppins);
+    color: var(--Very-Dark-Blue);
+    text-align: left;
+    padding: 16px 16px;
+    box-shadow: 3px 3px 5px 3px rgb(212, 210, 210);
+}
+
+.karma{
+    background-color: white;
+    border-top: 4px solid var(--Orange);
+    border-radius: 5px;
+    margin: 30px 8px;
+    font-family: var(--fontPoppins);
+    color: var(--Very-Dark-Blue);
+    text-align: left;
+    padding: 16px 16px;
+    box-shadow: 3px 3px 5px 3px rgb(212, 210, 210);
+}
+
+.calculator{
+    background-color: white;
+    border-top: 4px solid var(--Blue);
+    border-radius: 5px;
+    margin: 30px 8px;
+    font-family: var(--fontPoppins);
+    color: var(--Very-Dark-Blue);
+    text-align: left;
+    padding: 16px 16px;
+    box-shadow: 3px 3px 5px 3px rgb(212, 210, 210);
+}
+
+.supervisor__title, .teamBuilder__title, .karma__title, 
+.calculator__title{
+    font-size: 22px;
+    margin-bottom: 5px;
+    }
+    
+.supervisor__paragraph, .teamBuilder__paragraph, 
+.karma__paragraph, .calculator__paragraph{
+    font-size: 13px;
+    color: var(--Grayish-Blue);
+    margin-bottom: 102px;
+    }
+
+.supervisor__image, .teamBuilder__image, .karma__image, 
+.calculator__image{
+    width: 55px;
+    position: absolute;
+    transform: translate(200px, -60px);
+    }
