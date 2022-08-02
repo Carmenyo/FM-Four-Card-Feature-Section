@@ -22,129 +22,110 @@
 
 body{
     display: flex;
-    flex-direction: column;
-    width: 100vw;
-    background-color: var(--Very-Light-Gray);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background-color: var(--very-light-gray);
     align-items: center;
+    justify-content: center;
+}
+
+main{
+    width: 82%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.container{
     text-align: center;
-    margin: 90px 8px 0 8px;
-    padding: 0 20px;
 }
-.intro{
-    font-size: 16px;
-    font-family: var(--fontPoppins);
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    box-shadow: 0px 0.3rem 1rem hsl(0, 0%, 80%);
+    border-radius: 0.3rem;
 }
-.intro__title{
-    font-weight: 100;
-    color: var(--Very-Dark-Blue);
-    padding: 0 20px;
+
+.cyan{
+    border-top: 0.2rem solid var(--Cyan);
 }
-.intro__subtitle{
-    font-weight: 800;
-    color: var(--Very-Dark-Blue);
-    margin-bottom: 18px;
+
+.red{
+    border-top: 0.2rem solid var(--Red);
 }
-.intro__paragraph{
+
+.orange{
+    border-top: 0.2rem solid var(--Orange);
+}
+
+.blue{
+    border-top: 0.2rem solid var(--Blue);
+}
+
+.container__title{
+    margin-bottom: .5rem;
+    font-weight: 200;
     color: var(--Grayish-Blue);
-    margin-bottom: 70px;
 }
-.supervisor{
-    background-color: white;
-    border-top: 4px solid var(--Cyan);
-    border-radius: 5px;
-    margin: 30px 8px;
-    font-family: var(--fontPoppins);
+
+.container__subtitle{
+    font-weight: 600;
     color: var(--Very-Dark-Blue);
-    text-align: left;
-    padding: 16px 16px;
-    box-shadow: 0px 10px 10px 1px rgba(36, 36, 36, 0.2);
+    margin-bottom: 1rem;
+
 }
 
-.teamBuilder{
-    background-color: white;
-    border-top: 4px solid var(--Red);
-    border-radius: 5px;
-    margin: 30px 8px;
-    font-family: var(--fontPoppins);
-    color: var(--Very-Dark-Blue);
-    text-align: left;
-    padding: 16px 16px;
-    box-shadow: 0px 10px 10px 1px rgba(36, 36, 36, 0.2);
+.container__paragraph{
+    margin-bottom: 4.5rem;
+    font-size: 0.93rem;
+    color: var(--Grayish-Blue)
 }
 
-.karma{
-    background-color: white;
-    border-top: 4px solid var(--Orange);
-    border-radius: 5px;
-    margin: 30px 8px;
-    font-family: var(--fontPoppins);
-    color: var(--Very-Dark-Blue);
-    text-align: left;
-    padding: 16px 16px;
-    box-shadow: 0px 10px 10px 1px rgba(36, 36, 36, 0.2);
+.title{
+    margin-top: 0;
+    margin-bottom: .5rem;
+
+    color: var(--very-dark-blue);
 }
-
-.calculator{
-    background-color: white;
-    border-top: 4px solid var(--Blue);
-    border-radius: 5px;
-    margin: 30px 8px;
-    font-family: var(--fontPoppins);
-    color: var(--Very-Dark-Blue);
-    text-align: left;
-    padding: 16px 16px;
-    box-shadow: 0px 10px 10px 1px rgba(36, 36, 36, 0.2);
+.paragraph{
+    margin-top: 0;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+    font-size: 0.85rem;
 }
-
-.supervisor__title, .teamBuilder__title, .karma__title, 
-.calculator__title{
-    font-size: 22px;
-    margin-bottom: 5px;
-    }
-    
-.supervisor__paragraph, .teamBuilder__paragraph, 
-.karma__paragraph, .calculator__paragraph{
-    font-size: 13px;
-    color: var(--Grayish-Blue);
-    margin-bottom: 102px;
-    }
-
-.supervisor__image, .teamBuilder__image, .karma__image, 
-.calculator__image{
-    width: 55px;
-    position: absolute;
-    transform: translate(200px, -60px);
-    }
+img{
+    align-self: flex-end;
+    width: 3.5rem;
+}
 
 @media (min-width: 768px){
-    .intro{
-        font-size: 26px;
+
+    .container{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .intro__paragraph{
-        color: var(--Grayish-Blue);
-        font-size: 16px;
-        max-width: 550px;
-        margin-bottom: 70px;
-        margin: auto;
+
+    .container__title,
+    .container__subtitle{
+        font-size: 2.3rem;
     }
-    .supervisor, .teamBuilder, .karma, .calculator{
-        width: 350px;
-        height: 250px;
-        margin-bottom: 0;
+
+    .container__paragraph{
+        font-size: 1.1rem;
     }
-    .wrapper{
+    .cards{
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
     }
-    .supervisor{
-        margin-top: 175px;
+
+    .cards > .card,
+    .cardsRedOrange{
+        width: 30%;
     }
-    .karma{
-        order: 3;
-        margin-top: -130px;
-    }
-    .calculator{
-        margin-top: 175px;
-    }
+
 }
