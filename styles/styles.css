@@ -55,7 +55,7 @@ body{
     color: var(--Very-Dark-Blue);
     text-align: left;
     padding: 16px 16px;
-    box-shadow: 3px 3px 5px 3px rgb(212, 210, 210);
+    box-shadow: 0px 10px 10px 1px rgba(36, 36, 36, 0.2);
 }
 
 .teamBuilder{
@@ -67,7 +67,7 @@ body{
     color: var(--Very-Dark-Blue);
     text-align: left;
     padding: 16px 16px;
-    box-shadow: 3px 3px 5px 3px rgb(212, 210, 210);
+    box-shadow: 0px 10px 10px 1px rgba(36, 36, 36, 0.2);
 }
 
 .karma{
@@ -79,7 +79,7 @@ body{
     color: var(--Very-Dark-Blue);
     text-align: left;
     padding: 16px 16px;
-    box-shadow: 3px 3px 5px 3px rgb(212, 210, 210);
+    box-shadow: 0px 10px 10px 1px rgba(36, 36, 36, 0.2);
 }
 
 .calculator{
@@ -91,7 +91,7 @@ body{
     color: var(--Very-Dark-Blue);
     text-align: left;
     padding: 16px 16px;
-    box-shadow: 3px 3px 5px 3px rgb(212, 210, 210);
+    box-shadow: 0px 10px 10px 1px rgba(36, 36, 36, 0.2);
 }
 
 .supervisor__title, .teamBuilder__title, .karma__title, 
