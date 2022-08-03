@@ -30,7 +30,7 @@ body{
 }
 
 main{
-    width: 82%;
+    width: 90%;
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
@@ -104,7 +104,7 @@ img{
 @media (min-width: 768px){
 
     .container{
-        width: 50%;
+        width: 70%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -120,12 +120,10 @@ img{
     .cards{
         display: flex;
         align-items: center;
+        margin: auto;
         justify-content: space-evenly;
-    }
-
-    .cards > .card,
-    .cardsRedOrange{
-        width: 30%;
+        max-width: 60%;
+        gap: 30px;
     }
 
 }
