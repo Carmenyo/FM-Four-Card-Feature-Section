@@ -39,32 +39,6 @@ main{
     text-align: center;
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    text-align: left;
-    box-shadow: 0px 0.3rem 1rem hsl(0, 0%, 80%);
-    border-radius: 0.3rem;
-}
-
-.cyan{
-    border-top: 0.2rem solid var(--Cyan);
-}
-
-.red{
-    border-top: 0.2rem solid var(--Red);
-}
-
-.orange{
-    border-top: 0.2rem solid var(--Orange);
-}
-
-.blue{
-    border-top: 0.2rem solid var(--Blue);
-}
-
 .container__title{
     margin-bottom: .5rem;
     font-weight: 200;
@@ -75,13 +49,38 @@ main{
     font-weight: 600;
     color: var(--Very-Dark-Blue);
     margin-bottom: 1rem;
-
 }
 
 .container__paragraph{
     margin-bottom: 4.5rem;
     font-size: 0.93rem;
     color: var(--Grayish-Blue)
+}
+
+.card__cyan, .card__red, .card__orange, .card__blue {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    box-shadow: 0px 0.3rem 1rem hsl(0, 0%, 80%);
+    border-radius: 0.3rem;
+}
+
+.card__cyan{
+    border-top: 0.2rem solid var(--Cyan);
+}
+
+.card__red{
+    border-top: 0.2rem solid var(--Red);
+}
+
+.card__orange{
+    border-top: 0.2rem solid var(--Orange);
+}
+
+.card__blue{
+    border-top: 0.2rem solid var(--Blue);
 }
 
 .title{
@@ -96,7 +95,8 @@ main{
     line-height: 1.5rem;
     font-size: 0.85rem;
 }
-img{
+
+.image{
     align-self: flex-end;
     width: 3.5rem;
 }
@@ -105,35 +105,48 @@ img{
 @media (min-width: 768px){
 
     .container{
-        width: 100%;
+        width: 90%;
         margin: auto;
     }
 
     .container__title,
     .container__subtitle{
-        font-size: 2.3rem;
+        font-size: 2.5rem;
+        letter-spacing: 0.2px;
+    }
+    .container__title{
+        font-weight: 100;
     }
 
     .container__paragraph{
         font-size: 1rem;
-        max-width: 600px;
+        max-width: 500px;
         align-items: center;
         margin: auto;
         margin-bottom: 100px;
     }
     .cards{
         display: flex;
+        flex-direction: row;
         align-items: center;
-        margin: 0 0 0 14%;
-        justify-content: space-evenly;
-        max-width: 80%;
+        text-align: center;
+        margin: auto;
+        justify-content: space-between;
+        max-width: 70%;
         gap: 30px;
     }
-    .card{
-        max-width: 80%;
+
+
+    .card__cyan, .card__red, .card__orange, .card__blue{
+        min-width: 33%;
+    }
+
+.redorange{
+display: flex;
+flex-direction: column;
+width: 100%;
+align-items: center;
 }
-.cyan, .red, .orange{
-    max-width: 100%;
-}
+
 
 }
