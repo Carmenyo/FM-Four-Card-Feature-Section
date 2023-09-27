@@ -2,7 +2,7 @@
 
 A responsive product presentation using HTML5 and CSS3 to showcase a product through 4 cards that undergo a complete transformation for mobile devices. This project was completed as part of the Frontend Mentor challenges. The presentation effectively conveys product information while ensuring a seamless user experience across different screen sizes.
 
-![Design preview for the Four card feature section coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Four card feature section coding challenge](./images/Neutral%20Minimal%20Shadow%20Photographer%20Frame%20Mockup%20Pinterest%20Pin.png)
 
 ## Features
 
